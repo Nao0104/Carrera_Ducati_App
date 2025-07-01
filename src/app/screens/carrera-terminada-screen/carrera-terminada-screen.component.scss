@@ -1,0 +1,174 @@
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF;
+}
+
+.section-title{
+  border-top: 1px solid #7A7A7A1F!important;
+  //border-bottom: 1px solid #7A7A7A1F!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.body-instrucciones{
+  width: 100%;
+  height: 90vh;
+  background-color: #FFFFFF;
+  overflow-y: scroll!important;
+  //overflow-x: hidden!important;
+}
+
+.eslogan{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  // max-width: 40%;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.interior-normal{
+  max-width: 40%;
+}
+
+.interior-mobile{
+  width: 100%;
+}
+
+.line-color{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 5%;
+}
+
+.vertical-line{
+  width: 5px; /* Line width */
+  background-color: #CD0000; /* Line color */
+  height: 40px!important; /* Override in-line if you want specific height. */
+  float: left;
+}
+
+.txt-bold{
+
+  text-align: center;
+  font-family: Avenir-Bold;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.title-link{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  //Fuente
+  text-align: left;
+  font-family: Avenir-Bold;
+  font-size: 20px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 1;
+}
+
+
+.section-info-adicional{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.title{
+  text-align: left!important;
+  font-size: 16px!important;
+  font-family: Avenir-Bold!important;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.txt-info{
+  text-align: left;
+  font-family: Avenir;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+//Button
+.mdc-button{
+  background: #CD0000 0% 0% no-repeat padding-box;
+  opacity: 1;
+  width: 188px;
+  height: 40px;
+  border-radius: 0;
+  //Fuente
+  .text-btn{
+      text-align: center;
+      font-family: Avenir;
+      font-size: 16px;
+      letter-spacing: 0.8px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      opacity: 1;
+  }
+}
+
+.puntos-finales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.rectangulo {
+  width: 90px;
+  height: 160px;
+  top: 184px;
+  left: 135px;
+  background: #CD0000;
+  margin-bottom: 1rem;
+}
+
+.titulo-puntos {
+  font-family: Avenir-Bold;
+  font-size: 14px;
+  color: #CD0000;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+
+.cantidad-puntos {
+  font-family: Avenir-Bold;
+  font-size: 64px;
+  color: #000;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.label-puntos {
+  font-family: Avenir;
+  font-size: 20px;
+  color: #000;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+}

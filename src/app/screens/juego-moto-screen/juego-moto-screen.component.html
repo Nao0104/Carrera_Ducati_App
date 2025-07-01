@@ -1,0 +1,18 @@
+<section class="juego-moto">
+  <div class="wrapper">
+    <mat-drawer-container>
+      <mat-drawer #drawer mode='over' position="start">
+        <app-left-siderbar (cerrar)="drawer.toggle()"></app-left-siderbar>
+      </mat-drawer>
+      <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+      <!-- Sección del body donde se muestra todo el contenido -->
+       <div class="body-instrucciones">
+          <img src="/assets/images/juego-moto-img.png" class="juego" (click)="goCarreraTerminada()">
+       </div>
+        <!-- 6. Footer -->
+        <div class="footer">
+          <app-footer-app></app-footer-app>
+        </div>
+    </mat-drawer-container>
+  </div>
+</section>

@@ -1,0 +1,78 @@
+<section class="bases-promocion">
+    <div class="wrapper">
+    <!-- Esta etiqueta se usa para indicar todo el html que debe cubrir el menú -->
+    <mat-drawer-container>
+      <mat-drawer #drawer mode='over' position="start">
+        <!-- Inyectamos el componente partial que muestra el menú izquierdo -->
+        <app-left-siderbar (cerrar)="drawer.toggle()"></app-left-siderbar>
+      </mat-drawer>
+      <!-- Se coloca el header de las vistas -->
+      <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+      <!--Colocamos la seccion del body de toda la vista-->
+      <div class="body-home">
+        <!-- Primera sección - imágenes del inicio de la vista -->
+        <div class="section-image">
+          <img src="/assets/images/header-img.png" class="header-img">
+          <div class="line-red-horizontal">
+          <span class="text-ducati">Ducati Motor Holding S.p.A. Official Licensed Product</span>
+          </div>
+          <!--Seccion bases de la promocion-->
+          <div class="eslogan {{isMobile()}}">
+            <div class="line-color">
+                <div class="vertical-line" style="height: 111px;"></div>
+            </div>
+            <div class="title-link">
+              <span>Bases de la Promocion</span>
+            </div>
+          </div>
+        </div>
+        <!--Seccion de imagenes numeradas-->
+        <div class="section-bases">
+          <div class="num-bases">
+            <img src="/assets/images/1-compra-titulo.png" class="compra-1">
+            <div class="texft-and-image">
+              <span class="txt-normal">productos participantes   </span>
+              <img src="/assets/images/logo-marcas.png" class="logo-mini">
+            </div>
+            <span class="txt-bold mt-1">en Liverpool/Devlyn</span>
+          </div>
+          <div class="num-bases">
+            <img src="/assets/images/2-registra-titulo.png" class="compra-2">
+              <span class="txt-normal">todos tus códigos en el sitio</span>
+              <span class="txt-bold">www.acelerayganaconcarrera.con.mx</span>
+          </div>
+
+          <div class="num-bases">
+            <img src="/assets/images/3-acumula-titulo.png" class="compra-2">
+              <span class="txt-normal">puntos con cada compra y juega por puntos extras</span>
+          </div>
+
+          <div class="num-bases">
+            <img src="/assets/images/4-gana-titulo.png" class="compra-3">
+              <span class="txt-normal"> Una <span class="txt-bold">Moto Ducati <span class="txt-normal"> al finalizar la promocion </span></span></span>
+          </div>
+
+          <div class="num-bases" (click)="goInstrucciones()">
+            <img src="/assets/images/moto.png" class="moto-img">
+          </div>
+
+          <div>
+            <span class="txt-normal"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore neque perspiciatis totam iste blanditiis vitae aliquam sunt fugit sed harum error quam ad, dolor officiis. Eum illum beatae distinctio perspiciatis.</span>
+            <br><br>
+            <span class="txt-normal"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore neque perspiciatis totam iste blanditiis vitae aliquam sunt fugit sed harum error quam ad, dolor officiis. Eum illum beatae distinctio perspiciatis.</span>
+            <br><br>
+            <span class="txt-normal"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore neque perspiciatis totam iste blanditiis vitae aliquam sunt fugit sed harum error quam ad, dolor officiis. Eum illum beatae distinctio perspiciatis.</span>
+
+
+          </div>
+
+        </div>
+
+        <!-- 6. Footer -->
+        <div class="footer">
+          <app-footer-app></app-footer-app>
+        </div>
+      </div>
+    </mat-drawer-container>
+    </div>
+</section>

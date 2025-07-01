@@ -1,0 +1,114 @@
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF;
+}
+
+.section-image{
+  border-top: 1px solid #7A7A7A1F!important;
+  //border-bottom: 1px solid #7A7A7A1F!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.body-home{
+  width: 100%;
+  height: 90vh;
+  background-color: #FFFFFF;
+  overflow-y: scroll!important;
+  //overflow-x: hidden!important;
+}
+
+.eslogan{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  // max-width: 40%;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.line-color{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 5%;
+}
+
+.vertical-line{
+  width: 5px; /* Line width */
+  background-color: #CD0000; /* Line color */
+  height: 40px!important; /* Override in-line if you want specific height. */
+  float: left;
+}
+
+.title-link{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  //Fuente
+  text-align: left;
+  font-family: Avenir-Bold;
+  font-size: 20px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 1;
+}
+
+//Estilos de la parte del perfil
+.perfil-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.perfil-card {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-title {
+  font-family: Avenir-Bold;
+  font-size: 22px;
+  text-align: center;
+  color: #CD0000;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.perfil-dato {
+  font-size: 16px;
+  color: #333;
+  padding: 8px 0;
+  font-family: Avenir-Regular;
+  border-bottom: 1px solid #ddd;
+}
+
+.foto-perfil {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #CD0000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}

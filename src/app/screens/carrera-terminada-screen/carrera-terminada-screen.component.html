@@ -1,0 +1,51 @@
+<section class="carrera-terminada">
+  <div class="wrapper">
+    <mat-drawer-container>
+      <mat-drawer #drawer mode='over' position="start">
+        <app-left-siderbar (cerrar)="drawer.toggle()"></app-left-siderbar>
+      </mat-drawer>
+      <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+      <!-- Sección del body donde se muestra todo el contenido -->
+       <div class="body-instrucciones">
+        <!-- Sección del eslogan (título)-->
+        <div class="section-title">
+          <div class="eslogan {{isMobile()}}">
+              <div class="line-color">
+                  <div class="vertical-line" style="height: 111px;"></div>
+              </div>
+              <div class="title-link">
+                  <span>¡EXCELENTE CARRERA!</span>
+              </div>
+          </div>
+        </div>
+
+        <!-- Bloque central con puntos -->
+        <div class="puntos-finales">
+          <div class="rectangulo"></div>
+          <p class="titulo-puntos">OBTUVISTE</p>
+          <p class="cantidad-puntos">1400 </p>
+
+          <p class="label-puntos"> puntos</p>
+        </div>
+
+        <!-- Sección información adicional -->
+        <div class="section-info-adicional">
+          <p class="txt-info">
+            Gracias por participar, acumula mas puntos y gana una increible <span class="txt-bold mt-1">Ducati Scrambler.</span>
+          </p>
+          <!-- Botón para registrar código -->
+          <div class="d-flex flex-direction-row justify-content-center w-100 mt-3 mb-3">
+            <button mat-flat-button color="warn" class="btn-login" (click)="goInicio()" [disabled]="isLoading">
+                <span class="text-btn" *ngIf="!isLoading">Ir al inicio</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 6. Footer -->
+        <div class="footer">
+          <app-footer-app></app-footer-app>
+        </div>
+       </div>
+    </mat-drawer-container>
+  </div>
+</section>
